@@ -853,6 +853,42 @@ body {
   line-height: 1.1;
   font-size: 20px;
 }
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__item {
+  width: 100%;
+  margin-right: 30px;
+}
+.form__item:last-child {
+  margin-right: 0;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #c7d1d6;
+  width: 100%;
+  margin-bottom: 35px;
+  position: relative;
+}
+input:focus,
+input:active {
+  outline: none;
+}
+input[placeholder] {
+  font-family: "sintony";
+  font-size: 14px;
+  color: #363d43;
+  line-height: 1.9;
+  padding-right: 15px;
+}
+.fas,
+.far {
+  position: absolute;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
 .main-wrapper {
   background-color: #edf1f3;
   padding: 120px 0 105px;
@@ -1108,12 +1144,18 @@ body {
   top: 100px;
   margin-bottom: 90px;
 }
-.today-title {
+.section-title {
   font-family: "playfair_display";
   font-weight: 700;
   font-size: 35px;
-  color: #fff;
+  color: #14141d;
   padding-bottom: 20px;
+}
+.section-title--today {
+  color: #fff;
+}
+.section-title--reserve {
+  text-align: center;
 }
 .today-card {
   -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.9);
@@ -1226,7 +1268,7 @@ body {
 }
 .feedback {
   padding: 90px 0;
-  background-image: url('../img/feedback-slider/feedback-bg.jpg');
+  background-image: url("../img/feedback-slider/feedback-bg.jpg");
 }
 .feedback-block {
   display: -webkit-box;
@@ -1264,16 +1306,20 @@ body {
   font-weight: 700;
 }
 .feedback-block__descr:before {
-  content: '\201c';
+  content: "\201c";
   bottom: 0;
   left: -40px;
+  -webkit-transform: translate(40px, 0%);
+          transform: translate(40px, 0%);
 }
 .feedback-block__descr:after {
-  content: '\201c';
+  content: "\201c";
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   top: 25px;
   right: -40px;
+  -webkit-transform: translate(40px, 0%);
+          transform: translate(40px, 0%);
 }
 .feedback-block-avatar {
   display: -webkit-box;
@@ -1303,4 +1349,12 @@ body {
 }
 .block-avatar__rate .fas {
   color: #fff221;
+  position: static;
+}
+.reserve {
+  padding: 95px 0 100px;
+}
+.reserve-img img {
+  width: 100%;
+  display: block;
 }
