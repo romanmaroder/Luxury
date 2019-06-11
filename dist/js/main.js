@@ -55,15 +55,24 @@ window.onload = function () {
             items: 1,
             loop: true,
             dots:true,
-            margin:100,
+            // margin:100,
             // dotsEach: true,
             // autoplay: true,
             // autoplayHoverPause: true,
             // autoplayTimeout: 2000,
             // smartSpeed: 850,
             slideTransition:'linear',
-            lazyLoad: true
-
+            lazyLoad: true,
+            responsive:{
+                320:{
+                    items:1,
+                    nav:false
+                },
+                992:{
+                    items:2,
+                    nav:false
+                }
+            }
         });
     }); 
     
@@ -71,7 +80,7 @@ window.onload = function () {
         $(".owl-carousel-feedback").owlCarousel({
             items: 1,
             loop: true,
-            dots:false,
+            dots:true,
             nav:true,
             navText:["",""],
             margin:100,
