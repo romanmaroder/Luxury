@@ -18,8 +18,7 @@ window.onload = function () {
     // По клику на пункт мобильного меню скрываем меню
 
     for (var i = 0; i < navLinks.length; i++) {
-        navLinks[i].addEventListener('click', function (event) {
-            // event.preventDefault();
+        navLinks[i].addEventListener('click', function () {
             navList.classList.remove('navigation-list--open');
             navBtn.classList.toggle('navigation-btn--active');
             navBtn.style.position = "absolute";
@@ -94,4 +93,35 @@ window.onload = function () {
 
         });
     }); 
+
+    $(document).ready(function () {
+        $(".owl-carousel-cooks").owlCarousel({
+            items: 4,
+            dots:true,
+            loop: true,
+            margin:30,
+            responsive:{
+                320:{
+                    items:1,
+                    nav:false
+                },
+                425:{
+                    items:2,
+                    nav:false
+                },
+                768:{
+                    items:3,
+                    nav:false
+                },
+                992:{
+                    items:4,
+                    nav:false
+                }
+            },
+            slideTransition:'linear',
+            lazyLoad: true
+
+        });
+    });
 };
+
