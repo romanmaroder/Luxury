@@ -9,16 +9,26 @@ body {
 .section-title {
   font-family: "playfair_display";
   font-weight: 700;
-  font-size: 35px;
+  font-size: 28px;
   color: #14141d;
   padding-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 35px;
+  }
 }
 .section-title--today {
   color: #fff;
 }
 .section-title--reserve {
   text-align: center;
+}
+@media screen and (min-width: 1170px) {
+  .section-title--speciality {
+    text-align: left;
+  }
 }
 .section-descr {
   font-family: "sintony";
@@ -237,6 +247,10 @@ body {
 }
 .owl-carousel-cooks {
   padding-top: 40px;
+}
+.owl-carousel-cooks .owl-dots {
+  position: relative;
+  top: -30px;
 }
 .owl-carousel-cooks .owl-dot > span {
   border-color: #64615f;
@@ -771,7 +785,7 @@ body {
 }
 .opening-img {
   position: absolute;
-  top: -40px;
+  bottom: -35px;
 }
 .opening-img--bottom {
   bottom: -40px;
@@ -789,17 +803,27 @@ body {
   background-image: url("https://via.placeholder.com/1970x250?text=IMAGE+1970x250");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
+  height: 150px;
+}
+@media screen and (min-width: 768px) {
+  .top-banner {
+    height: 250px;
+  }
 }
 .top-banner__title {
   font-family: "Playfair Display";
   font-weight: bold;
-  font-size: 56px;
+  font-size: 40px;
   color: #fff;
   text-align: center;
   text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.37);
   margin: 0;
   padding: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .top-banner__title {
+    font-size: 56px;
+  }
 }
 .top-banner__title:before,
 .top-banner__title:after {
@@ -1504,7 +1528,12 @@ input[placeholder] {
   }
 }
 .history {
-  padding: 95px 0 100px;
+  padding: 50px 0;
+}
+@media screen and (min-width: 768px) {
+  .history {
+    padding: 95px 0 100px;
+  }
 }
 .history-block {
   border-bottom: 1px solid #e3e3e3;
@@ -1528,23 +1557,30 @@ input[placeholder] {
   cursor: pointer;
 }
 .history-block-video:before {
-  content: '';
-  width: 73px;
-  height: 73px;
+  content: "";
+  width: 40px;
+  height: 40px;
   background-color: #fc4350;
   border-radius: 50%;
 }
+@media screen and (min-width: 768px) {
+  .history-block-video:before {
+    width: 73px;
+    height: 73px;
+  }
+}
 .history-block-video:after {
-  content: url('../img/about/play_button.png');
+  content: url("../img/about/play_button.png");
   width: 13px;
   height: 18px;
+  margin: 0 2px;
 }
 .history-block-video video {
   width: 100%;
   height: auto;
 }
 .history-block-video .video-descr {
-  font-family: 'sintony';
+  font-family: "sintony";
   font-size: 13px;
   font-weight: 700;
   line-height: 1;
@@ -1554,11 +1590,16 @@ input[placeholder] {
   padding: 20px 0;
 }
 .coocks {
-  padding: 100px 0;
-  background-image: url('../img/about/bg-bw.jpg');
+  padding: 50px 0 0;
+  background-image: url("../img/about/bg-bw.jpg");
   background-repeat: repeat;
   background-size: auto;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .coocks {
+    padding: 100px 0 70px;
+  }
 }
 .card-wrapper {
   min-height: 380px;
@@ -1577,4 +1618,61 @@ input[placeholder] {
   font-size: 15px;
   padding: 20px 40px;
   text-transform: uppercase;
+}
+.speciality-img {
+  height: auto;
+  width: 100%;
+}
+@media screen and (min-width: 1170px) {
+  .speciality-img {
+    height: 572px;
+  }
+}
+.speciality-img img {
+  width: 100%;
+  height: auto;
+  position: static;
+  left: 0%;
+  top: 0;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+@media screen and (min-width: 1170px) {
+  .speciality-img img {
+    height: 572px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+}
+.speciality-info {
+  padding: 45px 0;
+}
+.speciality-content {
+  font-family: "sintony";
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 1170px) {
+  .speciality-content {
+    text-align: left;
+  }
+}
+.speciality-content:last-child {
+  margin-bottom: 0;
+}
+.specialyti-block__title {
+  font-size: 15px;
+  color: #14141d;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.133;
+  margin-bottom: 15px;
+}
+.specialyti-block__descr {
+  font-size: 14px;
+  color: #5c6369;
+  line-height: 1.857;
 }
