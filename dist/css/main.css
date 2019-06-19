@@ -30,6 +30,9 @@ body {
     text-align: left;
   }
 }
+.section-title--contact {
+  text-align: left;
+}
 .section-descr {
   font-family: "sintony";
   font-size: 14px;
@@ -1675,4 +1678,86 @@ input[placeholder] {
   font-size: 14px;
   color: #5c6369;
   line-height: 1.857;
+}
+.wrapper-contact {
+  padding: 95px 0;
+}
+.contact {
+  padding-bottom: 48px;
+}
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 200px;
+  margin-right: 100px;
+  font-family: 'sintony';
+  color: #14141d;
+  font-size: 16px;
+}
+.contact-block:last-child {
+  margin-right: 0;
+}
+.contact__icon {
+  margin-bottom: 20px;
+}
+.contact__icon .fas {
+  position: static;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+.contact__type {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact__content {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+}
+.contact__content a {
+  margin-right: 7px;
+}
+.contact__content a:last-child {
+  margin-right: 0;
+}
+.contact__content .fab {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 7px 0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contact__content .fab {
+    width: 52px;
+    height: 52px;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+}
+.contact__content .fa-facebook-f {
+  background-color: #3b5998;
+}
+.contact__content .fa-twitter {
+  background-color: #55acee;
+}
+.contact__content .fa-google-plus-g {
+  background-color: #dd4b39;
+}
+.touch {
+  padding-top: 48px;
+  background-color: #edf1f3;
 }
