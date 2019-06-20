@@ -1852,6 +1852,8 @@ input[placeholder] {
 iframe {
   width: 100%;
   height: auto;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 @media (min-width: 768px) {
   iframe {
