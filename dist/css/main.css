@@ -2944,7 +2944,7 @@ body {
 .top-banner__title {
   font-family: "Playfair Display";
   font-weight: bold;
-  font-size: 40px;
+  font-size: 36px;
   color: #fff;
   text-align: center;
   text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.37);
@@ -2991,12 +2991,6 @@ body {
   border-bottom: 3px dotted #14141d;
   bottom: -50px;
   width: 100%;
-}
-.food-menu__title {
-  font-family: "playfair_display";
-  font-size: 35px;
-  font-weight: 700;
-  margin-bottom: 40px;
 }
 .food-menu__list-menu {
   display: -webkit-box;
