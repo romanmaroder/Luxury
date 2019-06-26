@@ -5407,9 +5407,23 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 570px;
-  max-height: 302px;
   border: 1px solid #e8edef;
+}
+@media screen and (min-width: 992px) {
+  .recipies-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.recipies-card__img img {
+  width: 100%;
 }
 .recipies-card__content {
   display: -webkit-box;
