@@ -914,8 +914,58 @@ html {
   margin-left: auto !important;
 }
 
+.w-25 {
+  width: 25% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-25 {
+  height: 25% !important;
+}
+
+.h-50 {
+  height: 50% !important;
+}
+
+.h-75 {
+  height: 75% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.mw-100 {
+  max-width: 100% !important;
+}
+
+.mh-100 {
+  max-height: 100% !important;
+}
+
 body {
   min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 .section-title {
@@ -2785,6 +2835,97 @@ iframe {
   font-size: 14px;
   color: #5c6369;
   padding-bottom: 30px;
+}
+
+.recipies-details {
+  margin: 200px 0;
+}
+
+.details-vignette__rate {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.details-vignette__rate i {
+  color: #fea100;
+}
+
+.details-vignette__img {
+  background-image: url("https://via.placeholder.com/1170x450");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+}
+
+.recipies-details-items {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: translate(0px, 50%);
+  transform: translate(0px, 50%);
+  -webkit-box-shadow: 0px 19px 49px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 19px 49px 0px rgba(0, 0, 0, 0.15);
+}
+
+.details-time__item {
+  position: relative;
+  padding: 25px 0;
+}
+
+.details-time__item p {
+  margin: 0;
+  padding: 0;
+}
+
+.details-time__item--border:before,
+.details-time__item--border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.details-time__item--border:before {
+  border-left: 1px solid #c3e5f3;
+  left: -35px;
+}
+
+.details-time__item--border:after {
+  border-right: 1px solid #c3e5f3;
+  right: -35px;
+}
+
+.details-time__item a .fa-file-pdf {
+  color: #fea100;
+  font-size: 38px;
+}
+
+.details-time--minute {
+  font-family: "playfair_display";
+  font-size: 24px;
+  color: #14141d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.details-time--descr {
+  font-family: "sintony";
+  font-size: 16px;
+  color: #5c6369;
+  line-height: 22px;
+}
+
+.recipies-details__descr {
+  padding-top: 115px;
+  font-family: sintony;
+  font-size: 14px;
+  line-height: 26px;
+  color: #5c6369;
 }
 
 @media screen and (min-width: 375px) {
