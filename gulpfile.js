@@ -50,6 +50,7 @@ const rimraf = require('gulp-rimraf');
 const pug = require('gulp-pug');
 const webserver = require('browser-sync');
 const rigger = require('gulp-rigger');
+const gcmq = require('gulp-group-css-media-queries');
 
 gulp.task('webserver', function () {
     webserver(config);
@@ -68,11 +69,11 @@ gulp.task('html:build', function () {
 });
 
 gulp.task('css:build', function () {
-
     return gulp.src(path.app.css)
         .pipe(plumber())
         .pipe(less())
         .pipe(autoprefixer('> .5% or last 2 versions'))
+        .pipe(gcmq())
         .pipe(gulp.dest(path.dist.css))
         .pipe(rename({
             suffix: '.min'
