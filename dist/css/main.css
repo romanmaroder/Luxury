@@ -998,7 +998,7 @@ body {
 }
 
 .cost {
-  font-family: "playfair_display";
+  font-family: 'trivia_serif';
   font-weight: 700;
   color: #fea100;
 }
@@ -2142,8 +2142,9 @@ input[placeholder] {
 }
 
 .info-wrap .phone {
-  font-family: "playfair_display";
+  font-family: "trivia_serif";
   font-size: 32px;
+  font-weight: 700;
   color: #14141d;
   text-transform: uppercase;
   line-height: 0.688;
@@ -2322,18 +2323,18 @@ input[placeholder] {
 }
 
 .card-info__phone {
-  font-family: "playfair_display";
+  font-family: 'trivia_serif';
   font-weight: 700;
   font-size: 26px;
 }
 
 .card-info__phone--fz {
-  font-size: 24px;
+  font-size: 22px;
   margin-left: 24px;
 }
 
 .card-info__cost {
-  font-family: "playfair_display";
+  font-family: 'trivia_serif';
   font-weight: 700;
   font-size: 30px;
   color: #fea100;
@@ -2906,11 +2907,15 @@ iframe {
 }
 
 .details-time--minute {
-  font-family: "playfair_display";
+  font-family: 'trivia_serif';
   font-size: 24px;
   color: #14141d;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.details-time--minute--text {
+  text-transform: capitalize;
 }
 
 .details-time--descr {
