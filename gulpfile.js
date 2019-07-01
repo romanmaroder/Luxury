@@ -72,7 +72,7 @@ gulp.task('css:build', function () {
     return gulp.src(path.app.css)
         .pipe(plumber())
         .pipe(less())
-        .pipe(autoprefixer('> .5% or last 2 versions'))
+        .pipe(autoprefixer('> 1% or last 5 versions'))
         .pipe(gcmq())
         .pipe(gulp.dest(path.dist.css))
         .pipe(rename({
