@@ -983,7 +983,8 @@ li {
   text-align: center;
 }
 
-.section-title--today {
+.section-title--today,
+.section-title--food {
   color: #fff;
 }
 
@@ -991,13 +992,13 @@ li {
   text-align: center;
 }
 
-.section-title--contact {
+.section-title--contact,
+.section-title--food {
   text-align: left;
 }
 
-.section-title--food {
-  color: #fff;
-  text-align: left;
+.section-title--bg {
+  color: #000;
 }
 
 .section-sub-title {
@@ -2887,7 +2888,10 @@ iframe {
 }
 
 .recipies-details {
-  margin: 200px 0;
+  padding: 30px 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .details-vignette__rate {
@@ -3032,9 +3036,9 @@ th {
 }
 
 .step {
-  background: url('../../img/recipies/bg-step.jpg') no-repeat center;
+  background: url("../../img/recipies/bg-step.jpg") no-repeat center;
   background-size: cover;
-  padding: 95px 0;
+  padding: 50px 0;
 }
 
 .step-block {
@@ -3043,26 +3047,19 @@ th {
   height: 315px;
 }
 
-::-webkit-scrollbar {
-  width: 9px;
-  height: 3px;
-}
-
 ::-webkit-scrollbar-track {
   background-color: #cc8306;
-}
-
-::-webkit-scrollbar-track-piece {
-  background-color: #cc8306;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  height: 50px;
-  width: 9px;
-  background-image: url('../../img/recipies/scroling_line.png');
+  background-image: url("../../img/recipies/scroling_line.png");
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
 }
 
 .step__content {
@@ -3080,10 +3077,15 @@ th {
 }
 
 .step-text {
-  font-family: 'sintony';
+  font-family: "sintony";
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+  max-width: 80%;
+}
+
+.featured-recipied {
+  padding: 30px 0 10px;
 }
 
 @media screen and (min-width: 375px) {
@@ -4184,6 +4186,18 @@ th {
 
   .recipies.card-title {
     font-size: 26px;
+  }
+
+  .recipies-details {
+    padding: 95px 0;
+  }
+
+  .step {
+    padding: 95px 0;
+  }
+
+  .featured-recipied {
+    padding: 95px 0 10px;
   }
 }
 
